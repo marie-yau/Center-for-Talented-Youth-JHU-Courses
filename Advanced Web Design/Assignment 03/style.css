@@ -1,0 +1,43 @@
+body{
+    background-color: #bbd3ef;
+    text-align: center;
+}
+
+h2{
+    clear: both;
+    text-align: center;
+}
+
+p{
+    text-align: left;
+}
+
+ul li{
+    display: inline;
+}
+
+.im-left{
+    float: left;
+    margin: 15px;
+    margin-top: 0px;
+}
+
+.im-right{
+    float: right;
+    margin: 15px;
+    margin-top: 0px;
+}
+
+.im-right p, .im-left p{
+    text-align: center;
+}
+
+details{
+    text-align: left;
+    color: red;
+}
+
+.copyright{
+    margin-top: 100px;
+    text-align: center;
+}
