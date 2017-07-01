@@ -1,0 +1,27 @@
+body{
+    text-align: center;
+}
+
+h1{
+    text-shadow: 0px 0px 10px #555555;
+}
+
+ul{
+    list-style-type: none;
+}
+
+ul li{
+    display: inline;
+}
+
+img{
+    width: 150px;
+    height: 100px;
+    border: 2px solid black;
+    border-radius: 25px;
+}
+
+img:hover{
+    width: 300px;
+    height: 200px;
+}
