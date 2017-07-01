@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Assignment 10b</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+
+<script>
+    function permitDrop(event) {
+    event.preventDefault();
+}
+
+function drag(event) {
+    event.dataTransfer.setData("text", event.target.id);
+}
+
+function drop(event) {
+    event.preventDefault();
+    var data = event.dataTransfer.getData("text");
+    event.target.appendChild(document.getElementById(data));
+}
+</script>
+
+<h1>Drag-And-Drop Assignment</h1>
+
+<h2>Drag the cards into the box in ascending order</h2>
+
+<div class="drop" ondragover="permitDrop(event)" ondrop="drop(event)" ></div>
+
+<div class="cards">
+    <img src="./img/dq.gif" alt="dq" draggable="true" id="dq" ondragstart="drag(event)" />
+    <img src="./img/d9.gif" alt="d9" draggable="true" id="d9" ondragstart="drag(event)" />
+    <img src="./img/dk.gif" alt="dk" draggable="true" id="dk" ondragstart="drag(event)" />
+    <img src="./img/d10.gif" alt="d10" draggable="true" id="d10" ondragstart="drag(event)" />
+    <img src="./img/dj.gif" alt="dj" draggable="true" id="dj" ondragstart="drag(event)" />
+    <img src="./img/d8.gif" alt="d8" draggable="true" id="d8" ondragstart="drag(event)" />
+</div>
+
+</body>
+</html>

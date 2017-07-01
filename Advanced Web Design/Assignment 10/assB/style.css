@@ -1,0 +1,15 @@
+body{
+    text-align: center;
+}
+
+.drop{
+    display: inline-block;
+    width: 550px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+.drop img{
+    margin-left: 7px;
+    margin-right: 7px;
+}
