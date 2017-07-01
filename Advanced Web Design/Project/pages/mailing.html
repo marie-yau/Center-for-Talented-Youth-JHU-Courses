@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Smart Boards School Supplies - Mailing List Subscription</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" type="text/css" href="../style.css" />
+	<script type="text/javascript">
+		var $ = function ( id ) { return document.getElementById( id ); }
+		
+		function resetform(){
+			$("first").value = "";
+			$("last").value = "";
+			$("email").value = "";
+			$("age").value = "";
+			$("gender").value="";
+		}
+		
+		function submitform() {
+			var f = document.getElementsByTagName('form')[0];
+			if(f.checkValidity()) {
+				f.submit();
+			} else {
+				alert("Invalid form");
+			}
+		}
+	</script>
+    
+</head>
+<body>
+	<div class="header">
+		<h1>Smart Boards School Supplies</h1>
+	</div>
+	<div class="navbar">
+		<ul>
+			<li><a href="../index.html">Home</a></li>
+			<li><a href="../pages/locations.html">Locations</a></li>
+			<li><a href="../pages/faq.html">FAQ</a></li>
+			<li><a href="../pages/howto.html">How To</a></li>
+			<li><a href="../pages/contact.html">Contact</a></li>
+		</ul>
+	</div>
+
+                
+    
+	<div class="content">
+		<h1>Sign up to our mailing list and receive a free discount coupon!</h1>
+        
+		<form id="signup" action="coupon.html">
+            
+			<div class="data">
+			<label for="first">First name:</label>
+			<input type="text" id="first" required/> <br />
+			<label for="last">Last name:</label>
+			<input type="text" id="last" required/> <br />
+			<label for="email">Email address:</label>
+			<input type="text" id="email"  required/> <br />
+            <label for="age">Age:</label> 
+            <input type="text" id="age"  required/> <br />    
+			<label for="gender">Gender:</label>
+			<input type="text" id="gender"  required/> <br />                
+			</div>
+			<div class="button">
+			<input type="button" id="subscribe" onclick="submitform()" value="Subscribe" />
+			<input type="button" id="reset" onclick="resetform()" value="Reset" />
+			</div>
+		</form>
+            
+
+        
+        <img alt="coupon" src="../res/img/coupon.png" /><br />
+        <script language="javascript">
+            var today = new Date();
+            document.write(today);
+        </script>
+	</div>
+	<div class="footer">
+		<p>Copyright &copy; 2016 Smart Boards School Supplies </p>
+	</div>
+</body>
+</html>

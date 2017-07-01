@@ -1,0 +1,142 @@
+body{
+	margin: 0px;
+}
+
+img{
+	width: 60%;
+}
+
+.header{
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	border-bottom: 1px solid black;
+	background-color: #3b5998;
+	color: white;
+}
+
+.header h1::before{
+	content: url(./res/img/logo_small.png);
+}
+
+.page-content{
+	width: 100%;
+}
+
+.navbar{
+	border-right: 1px solid black;
+	width: 10%;
+	float: left;
+	bottom: 0px;
+}
+
+.navbar ul{
+	margin: 0px;
+	padding: 0px;
+	background-color: #d9d9d9;
+}
+
+.navbar li a{
+	display: block;
+	padding: 10px 0px 10px 10px;
+	color: black;
+	text-decoration: none;
+}
+
+.navbar li a:hover{
+	background-color: #152037;
+	color: white;
+}
+
+.content{
+	float: left;
+	width: 80%;
+	padding: 10px 0px 0px 30px;
+	margin: 0px 0px 40px 0px;
+	text-align: center;
+}
+
+.content p, .content li{
+	text-align: justify;
+}
+
+p.quest{
+	font-weight: bold;
+}
+
+p.ans{
+	font-style: italic;
+}
+
+.home-content{
+	width: 60%;
+}
+
+.home-text{
+	padding-top: 10px;
+	column-count: 2;
+}
+
+.sidebar{
+	float: right;
+	width: 25%;
+	background-color: #d9d9d9;
+	border-left: 1px solid black;
+}
+
+.sidebar ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.sidebar ul li{
+	border-bottom: 1px solid black;
+}
+
+.sidebar li a{
+	display: block;
+	padding: 10px 10px 10px 10px;
+	color: black;
+	text-decoration: none;
+}
+
+.sidebar li a img{
+	width: 15%;
+	margin-right: 5px;
+}
+
+.sidebar li a img:hover{
+	width: 30%;
+}
+
+.footer{
+	text-align: center;
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	background-color: #1a1a1a;
+	color: white;
+}
+
+.footer p{
+	margin: 3px;
+}
+
+form{
+	text-align: left;
+}
+
+			label		{ 
+							float: left;
+							text-align: right;
+							width: 15em;
+						}
+			.data input	{
+							margin-left: 1em;
+							margin-bottom: .5em;
+						}
+			.button		{
+							margin-left: 16em;
+							padding-top: .5em;
+						}
