@@ -1,6 +1,6 @@
 
 public class Counter {
-	private int count;
+	private int count; 
         
 	
         /**
